@@ -11,7 +11,7 @@ def createGraph():
     try:
         x_data = entry_for_x.get()
         y_data = entry_for_y.get()
-        plt.plot(np.array(x_data.split(','),dtype='int32'),np.array(y_data.split(','),dtype='int32'))
+        plt.plot(np.array(x_data.split(','),dtype='float64'),np.array(y_data.split(','),dtype='float64'))
         plt.xlabel(title_for_x.get())
         plt.ylabel(title_for_y.get())
         plt.title(entry_for_title.get())
